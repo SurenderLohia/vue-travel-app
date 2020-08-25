@@ -1,6 +1,7 @@
 <template>
   <div>
     <section class="destination">
+      <GoBack />
       <h1>{{ destination.name }}</h1>
       <div class="destination-details">
         <img
@@ -43,7 +44,11 @@
 
 <script>
 import store from "@/store";
+import GoBack from "../components/GoBack";
 export default {
+  components: {
+    GoBack
+  },
   data() {
     return {};
   },
